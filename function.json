@@ -10,8 +10,8 @@
     {
       "type": "eventHub",
       "name": "eventout",
-      "eventHubName": "link_check",
-      "connection": "EventHubCon",
+      "eventHubName": "<EVENT HUB NAME>",
+      "connection": "<EVENT HUB CONNECTION STRING>",
       "direction": "out"
     }
   ]
