@@ -48,7 +48,9 @@ def main(mytimer: func.TimerRequest, eventout: func.Out[str]) -> None:
     )
 
     # Get top level documentation folder
-    folder = requests.get(os.environ["docFolder"])
+    doc_folder = os.environ["docFolder"]
+    logging.info(f'My doc_folder value:{doc_folder}')
+    folder = requests.get(doc_folder)
     folder_data = json.loads(folder.text)
     logging.info(folder)
 
